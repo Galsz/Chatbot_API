@@ -1,12 +1,12 @@
-{"Atendimentos":
-    {
-        "Atendimento": {
-            "id": "1",
-            "Cliente": "Geovane",
-            "Numero": "15998211524"
-        }
-
+[{
+    "Atendimento": {
+        "id": "1",
+        "Cliente": "Geovane",
+        "Numero": "15998211524"
     }
+
 }
+]
+
 
    
