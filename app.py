@@ -15,7 +15,7 @@ def contatos():
 @app.route('/datapost',methods=['POST'])
 def add_register():
     new_register = request.get_json()
-    data.append(new_register)
+    data["Atendimentos"].append(new_register)
     return data
 
 
