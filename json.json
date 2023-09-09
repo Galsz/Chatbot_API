@@ -1,12 +1,17 @@
-[{
-    "Atendimento": {
-        "id": "1",
-        "Cliente": "Geovane",
-        "Numero": "15998211524"
+{
+    "Atendimentos": [
+    {
+        "Id": "<long>",
+        "LicencaId": "<long>",
+        "ClienteNome": "<string>",   
+        "ClienteFone": "<string>",
+        "DtHrAbertura": "<date>",
+        "DtHrFechamento": "<date>",
+        "Status": "<string>",
+        "AtendenteAbertura": "<string>",
+        "AtendenteFechamento": "<string>",
+        "TipoAtendimento": "<string>"
+
     }
-
-}
 ]
-
-
-   
+}
