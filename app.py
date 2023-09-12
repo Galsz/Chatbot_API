@@ -14,7 +14,7 @@ def contatos():
 
 @app.route('/data/<string:id>',methods=['GET'])
 def atendimentos_id(id):
-    for atendimento in data["Atendimentos"]:
+    for atendimento in data:
         if atendimento.get('AtendimentoCodigo') == id:
             return jsonify(atendimento)
 
@@ -22,17 +22,17 @@ def atendimentos_id(id):
 @app.route('/datapost',methods=['POST'])
 def add_register():
     new_register = request.get_json()
-    data["Atendimentos"].append(new_register)
+    data.append(new_register)
     return data
 
 
 @app.route('/data/<string:id>',methods=['PUT'])
 def update_register_id(id):
     update_register = request.get_json()
-    for i,atendimento in enumerate(data["Atendimentos"]):
+    for i,atendimento in enumerate(data):
         if atendimento.get('AtendimentoCodigo') == id:
-            data["Atendimentos"][i].update(update_register)
-            return jsonify(data["Atendimentos"][i])
+            data[i].update(update_register)
+            return jsonify(data[i])
 
 
 app.run(port=5000,host='localhost',debug=True)
