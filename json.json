@@ -1,15 +1,16 @@
 {
     "Atendimentos": [
     {
-        "Id": "<long>",
+
         "LicencaId": "<long>",
+        "AtendimentoCodigo": "<string>",
         "ClienteNome": "<string>",   
         "ClienteFone": "<string>",
         "DtHrAbertura": "<date>",
         "DtHrFechamento": "<date>",
         "Status": "<string>",
-        "AtendenteAbertura": "<string>",
-        "AtendenteFechamento": "<string>",
+        "AtendenteAberturaCodigo": "<string>",
+        "AtendenteFechamentoCodigo": "<string>",
         "TipoAtendimento": "<string>"
 
     }
